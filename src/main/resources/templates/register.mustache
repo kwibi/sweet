@@ -1,0 +1,17 @@
+</html>
+<div>
+    <form method="post">
+        <input type = "text" name="userName" placeholder="Username"/><br>
+        <input type = "text" name="passWord" placeholder="password"/><br>
+        <input type = "text" name="nickName" placeholder="Nickname"/><br>
+        <button type="submit">Register</button>
+    </form>
+    {{#message}}
+        <div>
+            <b>{{userName}}</b>
+            <span>{{passWord}}</span>
+            <i>{{nickName}}</i>
+        </div>
+    {{/message}}
+</div>
+</html>
