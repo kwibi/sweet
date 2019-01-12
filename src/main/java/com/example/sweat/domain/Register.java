@@ -19,8 +19,10 @@ public class Register {
 
     private Integer id;
     private String username;
+    private String userprename;
     private String pass;
     private String nickname;
+    private String phoneNumber;
 
 
     public String getUsername() {
@@ -31,9 +33,11 @@ public class Register {
         this.username = username;
     }
 
-    public String getPass() {
-        return pass;
-    }
+    public String getUserprename() { return userprename; }
+
+    public void setUserprename(String userprename) { this.userprename = userprename; }
+
+    public String getPass() { return pass; }
 
     public void setPass(String pass) {
         this.pass = pass;
@@ -55,4 +59,7 @@ public class Register {
         this.id = id;
     }
 
+    public String getPhoneNumber() { return phoneNumber; }
+
+    public void setPhoneNumber(String phoneNumber) { this.phoneNumber = phoneNumber; }
 }

@@ -30,8 +30,11 @@ public class RegisterDaoImpl implements RegisterDao {
             public PreparedStatement createPreparedStatement(Connection connection) throws SQLException {
                 PreparedStatement ps = connection.prepareStatement(SQL_INSERT, new String[] { Register.ID_COLUMN });
                 ps.setString(1, register.getUsername());
-                ps.setString(2, register.getPass());
-                ps.setString(3, register.getNickname());
+                ps.setString(2, register.getUserprename());
+                ps.setString(3, register.getPass());
+                ps.setString(4, register.getNickname());
+                ps.setString(5, register.getPhoneNumber());
+
                 return ps;
             }
         };
